@@ -1,0 +1,162 @@
+{
+  "dossiers": [
+    {
+      "dossier_id": "DOS-001-HABRIA",
+      "client_name": "Abdelkarim Habria",
+      "expected_decision": "ACCEPTED",
+      "expected_fields": {
+        "nom": "Habria",
+        "prenom": "Abdelkarim",
+        "cin_passeport": "05826391",
+        "nom_prenom_acheteur": "Abdelkarim Habria",
+        "cylindree": 49,
+        "numero_chassis": "9MWX05047"
+      },
+      "expected_cross_matching": {
+        "cin_passeport": "MATCH",
+        "nom_prenom_acheteur": "MATCH",
+        "numero_chassis": "MATCH",
+        "cylindree": "MATCH"
+      },
+      "documents": [
+        {
+          "file": "20260331_190558.jpeg",
+          "document_type": "CIN"
+        },
+        {
+          "file": "20260331_190449.jpeg",
+          "document_type": "FACTURE"
+        },
+        {
+          "file": "20260331_190508.jpeg",
+          "document_type": "QUITTANCE"
+        }
+      ]
+    },
+    {
+      "dossier_id": "DOS-002-SLIMANI",
+      "client_name": "Sami Slimani",
+      "expected_decision": "ACCEPTED",
+      "expected_fields": {
+        "nom": "Slimani",
+        "prenom": "Sami",
+        "cin_passeport": "06039883",
+        "nom_prenom_acheteur": "Sami Slimani",
+        "cylindree": 49,
+        "numero_chassis": "LBAMPAB342"
+      },
+      "expected_cross_matching": {
+        "cin_passeport": "MATCH",
+        "nom_prenom_acheteur": "MATCH",
+        "numero_chassis": "MATCH",
+        "cylindree": "MATCH"
+      },
+      "documents": [
+        {
+          "file": "17750396715423488398662890481221.jpeg",
+          "document_type": "CIN"
+        },
+        {
+          "file": "1775039688600970456072213120522.jpeg",
+          "document_type": "CONTRAT"
+        },
+        {
+          "file": "17750397047905823982275680117154.jpeg",
+          "document_type": "QUITTANCE"
+        }
+      ]
+    },
+    {
+      "dossier_id": "DOS-003-LAAJMI",
+      "client_name": "Nizar Lâajmi",
+      "expected_decision": "DOCUMENT_MANQUANT",
+      "expected_fields": {
+        "nom": "Lâajmi",
+        "prenom": "Nizar",
+        "cin_passeport": "09502561",
+        "nom_prenom_acheteur": "Nizar Lâajmi",
+        "cylindree": 49,
+        "numero_chassis": "LB412PEFYPC228466"
+      },
+      "expected_cross_matching": {
+        "cin_passeport": "MATCH",
+        "nom_prenom_acheteur": "MATCH",
+        "numero_chassis": "MATCH",
+        "cylindree": "MATCH"
+      },
+      "documents": [
+        {
+          "file": "Image (6).jpeg",
+          "document_type": "CIN"
+        },
+        {
+          "file": "Image (4).jpeg",
+          "document_type": "CONTRAT"
+        }
+      ]
+    },
+    {
+      "dossier_id": "DOS-004-ARAKI",
+      "client_name": "Walid Araki",
+      "expected_decision": "ACCEPTED",
+      "expected_fields": {
+        "nom": "Araki",
+        "prenom": "Walid",
+        "cin_passeport": "04678976",
+        "nom_prenom_acheteur": "Walid Araki",
+        "cylindree": 49,
+        "numero_chassis": "AZ2788"
+      },
+      "expected_cross_matching": {
+        "cin_passeport": "MATCH",
+        "nom_prenom_acheteur": "MATCH",
+        "numero_chassis": "MATCH",
+        "cylindree": "MATCH"
+      },
+      "documents": [
+        {
+          "file": "IMG_20260325_083747_727.jpeg",
+          "document_type": "CIN"
+        },
+        {
+          "file": "IMG_20260324_171703414.jpeg",
+          "document_type": "CONTRAT"
+        },
+        {
+          "file": "IMG_20260324_171958875.jpeg",
+          "document_type": "QUITTANCE"
+        }
+      ]
+    },
+    {
+      "dossier_id": "DOS-005-CHIOUCHIOU",
+      "client_name": "Salima Chiouchiou",
+      "expected_decision": "DOCUMENT_MANQUANT",
+      "expected_fields": {
+        "nom": "Chiouchiou",
+        "prenom": "Salima",
+        "cin_passeport": "09146769",
+        "nom_prenom_acheteur": "Salima Chiouchiou",
+        "cylindree": 49,
+        "numero_chassis": "LC2D10000C1100897"
+      },
+      "expected_cross_matching": {
+        "cin_passeport": "MATCH",
+        "nom_prenom_acheteur": "MATCH",
+        "numero_chassis": "MATCH",
+        "cylindree": "MATCH"
+      },
+      "documents": [
+        {
+          "file": "IMG_20260401_143923.jpeg",
+          "document_type": "CIN"
+        },
+        {
+          "file": "IMG_20260401_144010.jpeg",
+          "document_type": "CONTRAT"
+        }
+      ]
+    }
+  ],
+  "_note": "Vérité terrain à vérifier à la main. Les types de pièces (documents[].document_type) reprennent les étiquettes du manifeste data/inputs_manifest.json. 'readable' (true/false) peut être ajouté par pièce pour évaluer le contrôle qualité."
+}

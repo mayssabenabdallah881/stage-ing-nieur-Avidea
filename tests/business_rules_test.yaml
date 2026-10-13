@@ -1,0 +1,9 @@
+# Regles utilisees par la suite de tests (independantes de config/business_rules.yaml livre).
+max_allowed_displacement: 125
+small_engine_threshold: 49
+restriction_year: 2025
+restriction_date_field: date_mec
+required_documents:
+  identity: [CIN, PASSPORT]
+  vehicle: [CONTRAT, FACTURE]
+  payment: []

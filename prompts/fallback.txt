@@ -1,0 +1,15 @@
+ATTENTION : Il s'agit d'une seconde passe d'analyse après rehaussement ciblé de l'image (contraste/netteté améliorés).
+Nous recherchons spécifiquement à confirmer ou clarifier les champs :
+<<TARGET_FIELDS>>
+
+RÈGLE :
+- Si le champ est désormais distinctement lisible, renvoie sa valeur exacte.
+- Si le champ demeure illisible ou absent, renvoie STRICTEMENT null. Ne jamais inventer.
+
+Format JSON :
+{
+  "fields": {
+    "champ_recherche": {"raw_value": "...", "value": "...", "confidence": 0.90}
+  },
+  "justification": "Préciser si la lecture est maintenant certaine ou toujours ambiguë"
+}

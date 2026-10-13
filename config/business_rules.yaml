@@ -1,0 +1,30 @@
+# Règles métier déterministes du prototype (rapport, chapitre 8).
+# Modifiable sans toucher au code : les valeurs sont lues par src/config.py au démarrage.
+
+# Au-dessus de cette cylindrée (cc) : REJECTED (REJ-01 DISPLACEMENT_ABOVE_LIMIT)
+max_allowed_displacement: 125
+
+# Jusqu'à cette cylindrée (cc, incluse) : la condition de cylindrée est satisfaite sans condition de date
+small_engine_threshold: 49
+
+# Entre small_engine_threshold (exclu) et max_allowed_displacement (inclus) :
+# une date strictement postérieure au 01/01/<restriction_year> donne REJECTED (REJ-02 DATE_CONDITION_NOT_MET).
+restriction_year: 2025
+
+# Date évaluée pour cette condition. Elle doit être explicitement identifiée :
+# une date_mec absente n'est JAMAIS remplacée par la date_vente (=> REVIEW_REQUIRED).
+restriction_date_field: date_mec
+
+# Libellés (rejection_type) renvoyés avec une décision REJECTED :
+rejection_types:
+  displacement_above_limit: PUISSANCE_SUP_125            # cylindrée > max_allowed_displacement
+  date_condition_not_met: PUISSANCE_SUP_49_APRES_2025    # 49 < cylindrée <= 125 et date_mec > 01/01/restriction_year
+
+# Pièces obligatoires (par type de document). Il faut AU MOINS UNE pièce lisible de chaque liste :
+#   identité : CIN ou PASSPORT   ET   véhicule : CONTRAT ou FACTURE
+# Sinon : décision DOCUMENT_MANQUANT. Une liste vide désactive l'exigence correspondante.
+# Types possibles : CIN, PASSPORT, CONTRAT, FACTURE, QUITTANCE, CARTE_GRISE, PERMIS
+required_documents:
+  identity: [CIN, PASSPORT]
+  vehicle: [CONTRAT, FACTURE]
+  payment: [QUITTANCE]       # quittance de vignette : un dossier sans quittance est DOCUMENT_MANQUANT

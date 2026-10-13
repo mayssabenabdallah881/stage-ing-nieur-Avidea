@@ -1,0 +1,6 @@
+
+SIGNAUX D'ALTÉRATION (champ "signes_alteration") :
+- Liste ici, sous forme de courtes phrases, uniquement les signes d'altération CLAIREMENT VISIBLES sur le document : surcharge ou rature sur un chiffre, zone grattée ou effacée, police ou encre visiblement différente au sein d'un même champ, collage ou superposition.
+- Précise le champ concerné quand c'est possible (ex: "numero_chassis : dernier chiffre surchargé").
+- Ne conclus JAMAIS à une fraude : tu signales seulement ce que tu vois. Une écriture manuscrite irrégulière, un flou ou un mauvais éclairage ne sont PAS des signes d'altération.
+- S'il n'y a aucun signe visible, renvoie une liste vide : [].

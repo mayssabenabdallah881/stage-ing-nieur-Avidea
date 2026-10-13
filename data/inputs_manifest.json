@@ -1,0 +1,107 @@
+{
+  "samples_dir": "data/samples",
+  "dossiers": [
+    {
+      "dossier_id": "DOS-001-HABRIA",
+      "client": "Abdelkarim Habria",
+      "documents": [
+        {
+          "file": "20260331_190558.jpeg",
+          "type": "CIN"
+        },
+        {
+          "file": "20260331_190449.jpeg",
+          "type": "FACTURE"
+        },
+        {
+          "file": "20260331_190508.jpeg",
+          "type": "QUITTANCE"
+        }
+      ]
+    },
+    {
+      "dossier_id": "DOS-002-SLIMANI",
+      "client": "Sami Slimani",
+      "documents": [
+        {
+          "file": "17750396715423488398662890481221.jpeg",
+          "type": "CIN"
+        },
+        {
+          "file": "1775039688600970456072213120522.jpeg",
+          "type": "CONTRAT"
+        },
+        {
+          "file": "17750397047905823982275680117154.jpeg",
+          "type": "QUITTANCE"
+        }
+      ]
+    },
+    {
+      "dossier_id": "DOS-003-LAAJMI",
+      "client": "Nizar Laajmi",
+      "documents": [
+        {
+          "file": "Image (6).jpeg",
+          "type": "CIN"
+        },
+        {
+          "file": "Image (4).jpeg",
+          "type": "CONTRAT"
+        }
+      ]
+    },
+    {
+      "dossier_id": "DOS-004-ARAKI",
+      "client": "Walid Araki",
+      "documents": [
+        {
+          "file": "IMG_20260325_083747_727.jpeg",
+          "type": "CIN"
+        },
+        {
+          "file": "IMG_20260324_171703414.jpeg",
+          "type": "CONTRAT"
+        },
+        {
+          "file": "IMG_20260324_171958875.jpeg",
+          "type": "QUITTANCE"
+        }
+      ]
+    },
+    {
+      "dossier_id": "DOS-005-CHIOUCHIOU",
+      "client": "Salima Chiouchiou",
+      "documents": [
+        {
+          "file": "IMG_20260401_143923.jpeg",
+          "type": "CIN"
+        },
+        {
+          "file": "IMG_20260401_144010.jpeg",
+          "type": "CONTRAT"
+        }
+      ]
+    },
+    {
+      "dossier_id": "DOS-006-SCAN",
+      "client": "A confirmer (scans PDF du 01/04/2026)",
+      "documents": [
+        {
+          "file": "img20260401_12402993.pdf",
+          "type": "CIN"
+        },
+        {
+          "file": "img20260401_12454145.pdf",
+          "type": "CONTRAT"
+        }
+      ]
+    }
+  ],
+  "non_affectes": [
+    {
+      "file": "WhatsApp Image 2026-03-31 at 09.06.37 (1).jpeg",
+      "type": "PERMIS"
+    }
+  ]
+}
